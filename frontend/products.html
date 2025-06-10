@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - PetShop Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Nossos Produtos 🍖🧸</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="cart.html">🛒 Carrinho</a></li>
+                <li id="nav-auth">
+                    <a href="login.html">Login</a> | <a href="register.html">Cadastro</a>
+                </li>
+                <li id="nav-user" style="display: none;">
+                    Olá, <span id="user-name"></span>! | <a href="#" id="logout-button">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="global-message-container"></div>
+
+        <div class="filters">
+            <label for="category-filter">Filtrar por Categoria:</label>
+            <select id="category-filter">
+                <option value="todos">Todas</option>
+                <option value="gato">Gato 😺</option>
+                <option value="cachorro">Cachorro 🐶</option>
+                <option value="geral">Geral 🐾</option>
+            </select>
+            </div>
+
+        <div id="loading-message" style="display: none; text-align: center; padding: 20px;">
+            Carregando produtos...
+        </div>
+        <div id="products-grid">
+            </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 PetShop Online.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
